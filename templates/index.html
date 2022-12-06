@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Random Quote Generator</title>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    </head>
+    <body>
+      <h1> Quote for you </h1>
+      <h2> by Matteo Manzoni </h2>
+      <div id="quote-container">
+        <h3 id="quote"> Your random quote will appear here! {{ quote }} </h3>
+        <button id="generate" onclick="generate()"> Generate quote </button>
+</div>
+      </body>
+        
+
+
+    
+
+    
+
+    <script type="text/javascript" src="{{ url_for('static',filename='scripts/app.js') }}"></script>
+
+  
+  
+  <head>
+	<title>APP Assignment</title>
+	<link rel="stylesheet" href="static/w3.css">
+	<link rel="stylesheet" href="static/w3-deep-purple-theme.css">
+</head>
+
+	<body>
+    <!-- Journal Section -->
+    
+        
+        <div>
+            <h2>All Quotes</h2>
+            <ol id="listEntries" class="w3-ul w3-card w3-hoverable w3-theme-l4">
+              <li>item 1</li>
+              <li>item 2</li>
+            </ol>
+        </div>
+        <div>
+            <button id="buttonUpdate" class="w3-button w3-theme-d5 w3-margin-top">upload journal</button>
+        </div>
+    
+        <div id="journalItem" >
+          <h3>Selected Entry</h3>
+            <div>
+                <div><label for="quoteId">ID: </label>
+                <input type="text" id="quoteId" class="w3-input w3-border w3-round" disabled></div>
+                <div><label for="dateQuote">Date: </label>
+                <input type="text" id="dateQuote" class="w3-input w3-border w3-round" disabled></div>
+                <label for="quoteQ">quote: </label>
+                <div><input type="text" id="quoteQ" class="w3-input w3-border w3-round" disabled></div>
+                <label for="authorQ">Author: </label>
+                <textarea id="authorQ" name="authorQ" rows="4" cols="50" class="w3-input w3-border w3-round" disabled></textarea>
+            </div>
+        </div>
+        <div>
+          <div> <button id="buttonDelete" class="w3-button w3-theme-d5 w3-margin-top">Delete</button></div>
+        </div>
+    
+
+    <div id="addItem" >
+            <h3>Add Entry</h3>
+            <div>
+                <div><label for="quoteId">ID:</label>
+                <input type="text" id="idAdd" class="w3-input w3-border w3-round" value="auto generated - ignore" disabled required></div>
+                <div><label for="dateQuote">Date: </label>
+                <input type="text" id="dateAdd" class="w3-input w3-border w3-round"  required></div>
+                <div><label for="nameEntry">quote: </label>
+                <input type="text" id="nameAdd" class="w3-input w3-border w3-round" required></div>
+                <label for="txtEntry">Author: </label>
+            <textarea id="txtAdd" name="txtAdd" rows="4" cols="50" class="w3-input w3-border w3-round" required></textarea>
+        </div>
+        <div>
+            <button id="buttonAdd" class="w3-button w3-theme-d5 w3-margin-top">Add</button>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-footer w3-theme-d1 w3-margin-top">
+      <a href="#home">To the top</a>
+    </footer>
+
+<script src="static/scripts/app.js"></script>
+</body>
+</html>
+   
+   

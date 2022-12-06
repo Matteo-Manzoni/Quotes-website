@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,400&display=swap');
+
+@keyframes button-hover {
+  from {background: #BA55D3;}
+  to {background: #9947ae;}
+} 
+
+@keyframes button {
+  from {background: #9947ae;}
+  to {background: #BA55D3;}
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 85px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  text-align: left;
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+body h2 {
+  color: #f066eb
+}
+
+#quote-container {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+#quote-container #quote {
+  margin: 30px;
+}
+
+#quote-container button {
+  padding: 17px 50px;
+  margin: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  background-color: #9d4eb1;
+  color: white;
+  animation-name: button;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+#quote-container button:hover {
+  animation-name: button-hover;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
